@@ -1,0 +1,18 @@
+CREATE TABLE todo_list (
+  task_id INT PRIMARY KEY,
+  task_name VARCHAR(255),
+  description VARCHAR(255),
+  is_completed BOOLEAN
+);
+INSERT INTO todo_list (task_id, task_name, description, is_completed)
+VALUES (1, 'Finish homework', 'Complete math and science assignments', TRUE);
+
+INSERT INTO todo_list (task_id, task_name, description, is_completed)
+VALUES (2, 'Go grocery shopping', 'Buy fruits, vegetables, and milk', FALSE);
+
+INSERT INTO todo_list (task_id, task_name, description, is_completed)
+VALUES (3, 'Call mom', 'Check in and catch up on news', FALSE);
+
+INSERT INTO todo_list (task_id, task_name, description, is_completed)
+VALUES (4, 'Clean the house', 'Sweep, mop, and dust all rooms', FALSE);
+SELECT * FROM todo_list;
